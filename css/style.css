@@ -13,7 +13,8 @@ h1 {
 text-align: center;
 font-size: 40px;
 color: #E43035;
-margin-top: 100px;
+margin-top: 140px;
+font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
@@ -21,7 +22,8 @@ h2 {
     text-align: center;
     font-size: 40px;
     color: #E43035;
-    margin-top: 100px;
+    margin-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
@@ -43,18 +45,17 @@ text-align: center;
 }
 
  #choices li {
-    margin-top: 100px;    
+    margin-top: 60px;    
     border-style: outset;
     background-color: #E43035;
-
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #answer li {
-    margin-top: 100px;
-    color: #E43035;
-    font-size: 40px;
-    padding-top: 50px;
-     
+    margin-top: 70px;
+    color: whitesmoke;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;; 
 }
 
 #choices, button {
@@ -67,6 +68,7 @@ text-align: center;
     background-color: #E43035;
     border-style: outset;
     max-width: 200px;
-    margin-left: 850px;
+    margin-left: 670px;
     padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
