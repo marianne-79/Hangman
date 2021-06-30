@@ -1,0 +1,72 @@
+#choices li, #answer li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+body {
+    background-size: cover;
+    
+}
+
+h1 {
+text-align: center;
+font-size: 40px;
+color: #E43035;
+margin-top: 100px;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #E43035;
+    margin-top: 100px;
+
+}
+
+.disabled {
+    opacity: 0.3;
+}
+
+div {
+text-align: center;
+}
+
+#score {
+    text-align: center;
+    color: black;
+    background-color: #E43035;
+    border-style: outset;
+    max-width: 100px;
+    margin-left: 60px;
+}
+
+ #choices li {
+    margin-top: 100px;    
+    border-style: outset;
+    background-color: #E43035;
+
+}
+
+#answer li {
+    margin-top: 100px;
+    color: #E43035;
+    font-size: 40px;
+    padding-top: 50px;
+     
+}
+
+#choices, button {
+    cursor: pointer;
+}
+
+.play {
+    text-align: center;
+    color: black;
+    background-color: #E43035;
+    border-style: outset;
+    max-width: 200px;
+    margin-left: 850px;
+    padding: 10px;
+}

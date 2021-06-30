@@ -1,1 +1,1 @@
-# Hangman
+# Hangman ( le pendu )
