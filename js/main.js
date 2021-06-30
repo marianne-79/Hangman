@@ -22,6 +22,8 @@ const words = [
     'MERLER',
     'DESONNER',
     'COLLE',
+    'VA TE FAIRE LOUTRE',
+    'PATIN DE BRETZEL DE MERLE',
 
 
 ];
