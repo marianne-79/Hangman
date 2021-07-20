@@ -4,7 +4,7 @@ const els = {
     choices: null
 };
 
-const words = [
+const words = [             // les mots choisis 
     'PATIN',
     'MERLE',
     'BRETZEL',
@@ -47,30 +47,37 @@ const init = () => {
     // Choisir un mot
     word = pickWord();
     //  test console.log('word', word);
-    //      - créer un word mapping
-    wordMapping = getWordMapping(word);
+    
+    //      - créer un word mapping             // pour collecter les données des mots clés
+      wordMapping = getWordMapping(word);
     //  test console.log('wordMapping', wordMapping);
     // Générer des choix
-    choices = generateChoices();
+       choices = generateChoices();
     //  test console.log(choices);
-    //      - créer un mapping des choix
+    
+    //      - créer un mapping des choix            // collecter des données pour les choix avec des mots clés
     choicesMapping = getChoicesMapping(choices);
     //  test console.log(choicesMapping);
+    
     // Display le mot
     displayWord(wordMapping);
+    
     // Display les choix
     displayChoices(choicesMapping);
-    // Display le score
+    
+    // Display le score pour l'afficher 
     displayScore();
+    
     // listen events
-    //      - mouse events
+    
+    //      - choix avec la souris 
     els.choices.addEventListener('click', ({target}) => {
         //evt:MouseEvent evt.target => { target }
         if (target.matches('li')) {
             checkLetter(target.innerHTML);
         }
     });
-    //      - keyboard events
+    //      - choix avec le clavier 
     document.addEventListener('keydown', ({ keyCode }) => {
     // evt:KeyboardEvent evt.keyCode => { keyCode }
     //   test console.log('keyCode', keyCode);
@@ -93,6 +100,7 @@ const checkLetter = (letter) => {
     console.log(letter);
     let isLetterInWord = false;
     let isAllLettersFound = true;
+    
     //   test console.log('isLetterInWord before loop', isLetterInWord);
     wordMapping.forEach((letterMapping) => {
         if (letterMapping.letter === letter) {
